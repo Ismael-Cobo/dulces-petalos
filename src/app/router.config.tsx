@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router";
-import { MainLayout } from "./MainLayout";
 import { FlowerListPage } from "@/features/flowers/flowerListPage/FlowerListPage";
 import { FlowerDetailPage } from "@/features/flowers/flowerDetail/FlowerDetailPage";
+import { MainLayout } from "@/components/layout/MainLayout/MainLayout";
 
 export const createAppRouter = () =>
     createBrowserRouter([

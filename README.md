@@ -26,17 +26,18 @@ El proyecto sigue una arquitectura **feature-based**: cada funcionalidad es un m
 ```
 src/
 ├── app/                          # Infraestructura de la aplicación
-│   ├── components/Header/        # Componentes del shell
-│   ├── MainLayout.tsx            # Layout principal (Header + Outlet)
 │   ├── router.config.tsx         # Definición de rutas
 │   └── App.tsx
 │
 ├── components/
-│   ├── card/                     # Componente Card compuesto (Card.Header, Card.Media…)
+│   ├── layout/                   # Componentes estructurales del shell
+│   │   ├── Header/               # Cabecera global de la aplicación
+│   │   └── MainLayout/           # Layout principal (Header + Outlet)
 │   └── ui/                       # Primitivas de UI reutilizables
 │       ├── badge/                # Badge (variant: success | default)
 │       ├── breadcrumb/           # Breadcrumb compuesto (6 subcomponentes)
 │       ├── button/               # Button (variant: primary | ghost)
+│       ├── card/                 # Card compuesto (Card.Header, Card.Media…)
 │       └── input/                # Input con prefixIcon
 │
 ├── features/
@@ -175,7 +176,7 @@ Definidos en `src/index.css` como variables CSS globales:
 | `/flowers/:id` | `FlowerDetailPage` | Detalle de una flor |
 | `*` | — | Redirige a `/` |
 
-Todas las rutas son hijas de `MainLayout` (Header + contenido).
+Todas las rutas son hijas de `MainLayout` (`components/layout/MainLayout`) que incluye el `Header` y el `Outlet` de React Router.
 
 ---
 
