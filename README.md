@@ -41,18 +41,25 @@ src/
 │
 ├── features/
 │   └── flowers/
+│       ├── data/                 # Mock data compartido entre features
+│       ├── models/               # Flower type — compartido entre features
+│       │
 │       ├── flowerListPage/       # Catálogo — listado con búsqueda
-│       │   ├── api/              # Llamadas al backend (Result<T>)
+│       │   ├── api/              # getFlowerList.api.ts (Result<T>)
 │       │   ├── components/       # FlowerCard, FlowerList, FlowerSearch
-│       │   ├── data/             # Mock data (hasta resolver CORS)
 │       │   ├── hooks/            # useFlowerPage
-│       │   ├── models/           # Flower type
 │       │   └── FlowerListPage.tsx
 │       │
 │       └── flowerDetail/         # Detalle de una flor
-│           ├── components/       # FlowerDetail (presentacional)
+│           ├── api/              # getFlower.api.ts (Result<T>)
+│           ├── components/
+│           │   ├── FlowerBreadcrumb/  # Breadcrumb contextual de la feature
+│           │   └── FlowerDetail/      # Presentacional — imagen, info, carrito
 │           ├── hooks/            # useFlowerDetailPage
 │           └── FlowerDetailPage.tsx
+│
+├── hooks/                        # Hooks globales reutilizables
+│   └── useWindowSize.ts          # Detecta breakpoint (isMobile)
 │
 └── lib/
     ├── api-client.ts             # Cliente HTTP base
