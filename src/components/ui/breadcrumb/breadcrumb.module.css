@@ -1,0 +1,38 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    font-size: 0.85rem;
+    color: var(--neutral-800);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: var(--accent-600);
+}
+
+.separator {
+    font-size: 0.85rem;
+    color: var(--neutral-800);
+    user-select: none;
+}
+
+.page {
+    font-size: 0.85rem;
+    color: var(--neutral-1000);
+    font-weight: 600;
+}

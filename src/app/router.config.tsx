@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { MainLayout } from "./MainLayout";
-import { FlowerListPage } from "@/features/flowers/FlowerListPage";
+import { FlowerListPage } from "@/features/flowers/flowerListPage/FlowerListPage";
+import { FlowerDetailPage } from "@/features/flowers/flowerDetail/FlowerDetailPage";
 
 export const createAppRouter = () =>
     createBrowserRouter([
@@ -11,6 +12,10 @@ export const createAppRouter = () =>
                 {
                     path: "/",
                     element: <FlowerListPage />,
+                },
+                {
+                    path: "/flowers/:id",
+                    element: <FlowerDetailPage />,
                 },
                 {
                     path: "*",

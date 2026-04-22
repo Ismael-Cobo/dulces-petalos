@@ -1,0 +1,19 @@
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.default {
+    background-color: var(--neutral-200);
+    color: var(--neutral-800);
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
