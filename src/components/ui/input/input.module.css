@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid var(--black-200);
+    border-radius: var(--radius-2xs);
+    background-color: var(--neutral-200);
+    box-sizing: border-box;
+}
+
+.wrapper:focus-within {
+    border-color: var(--accent-600);
+}
+
+.prefixIcon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--neutral-800);
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--neutral-1000);
+}
+
+.input::placeholder {
+    color: var(--neutral-800);
+}

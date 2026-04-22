@@ -1,0 +1,14 @@
+.grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-xs);
+}
+
+.feedback {
+    text-align: center;
+    color: var(--neutral-800);
+    font-size: 0.9375rem;
+}

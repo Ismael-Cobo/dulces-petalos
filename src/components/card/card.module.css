@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    border-radius: var(--radius-md);
+    background-color: var(--neutral-100);
+    box-shadow: var(--shadow-300);
+    padding: var(--spacing-xs);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+.card[href] {
+    cursor: pointer;
+}

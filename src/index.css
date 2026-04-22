@@ -1,0 +1,36 @@
+:root {
+    --neutral-100: #ffffff;
+    --neutral-200: #f9f9f9;
+    --neutral-800: #606060;
+    --neutral-1000: #111111;
+
+    --accent-600: #771e42;
+
+    --black: #000000;
+    --black-100: #0c0c0d0d;
+    --black-200: #0c0c0d1a;
+
+    --shadow-300: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    --radius-2xs: 8px;
+    --radius-sm: 24px;
+    --radius-md: 32px;
+    --radius-full: 999px;
+
+    --spacing-2xs: 8px;
+    --spacing-xs: 16px;
+    --spacing-xl: 48px;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+#root {
+    background-color: var(--neutral-200);
+    min-height: 100vh;
+}
+
+p {
+    margin: 0;
+}
