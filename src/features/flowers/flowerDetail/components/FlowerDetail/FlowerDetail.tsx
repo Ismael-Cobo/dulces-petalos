@@ -1,7 +1,7 @@
-import type { Flower } from "../../../flowerListPage/models/flower.model";
 import { Button } from "@/components/ui/button/Button";
 import styles from "./flower-detail.module.css";
 import { useWindowSize } from "@/hooks/useWindowSize";
+import type { Flower } from "@/features/flowers/models/flower.model";
 
 type FlowerDetailProps = {
     flower: Flower;

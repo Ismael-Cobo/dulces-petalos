@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import type { Flower } from "../models/flower.model";
-import { getFlowerList } from "../api/flowers.api";
+import type { Flower } from "../../models/flower.model";
+import { getFlowerList } from "../api/getFlowerList.api";
 
 export const useFlowerPage = () => {
     const [query, setQuery] = useState("");

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import type { Flower } from "../../flowerListPage/models/flower.model";
-import { getFlower } from "../../flowerListPage/api/flowers.api";
+import type { Flower } from "../../models/flower.model";
 import { redirect, useParams } from "react-router";
+import { getFlower } from "../api/getFlower.api";
 
 export const useFlowerDetailPage = () => {
     const { id } = useParams<{ id: string }>();

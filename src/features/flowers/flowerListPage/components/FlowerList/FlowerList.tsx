@@ -1,4 +1,4 @@
-import { type Flower } from "../../models/flower.model";
+import { type Flower } from "../../../models/flower.model";
 import { FlowerCard } from "../FlowerCard/FlowerCard";
 import styles from "./flower-list.module.css";
 

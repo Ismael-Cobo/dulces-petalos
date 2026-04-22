@@ -1,5 +1,5 @@
 import { Card } from "@/components/card/Card";
-import type { Flower } from "../../models/flower.model";
+import type { Flower } from "../../../models/flower.model";
 
 type FlowerCardProps = {
     flower: Flower;
